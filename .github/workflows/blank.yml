@@ -1,0 +1,10 @@
+name: expressions and context objects
+
+on: workflow_dispatch
+
+jobs:
+  deploy:
+   runs-on: ubuntu-latest
+   steps:
+     - name: configurations
+       run: ${{toJson(github)}}
