@@ -1,0 +1,16 @@
+name: my_first_workflow
+
+on: workflow_dispatch
+
+jobs:
+  build:
+     runs-on: ubuntu-latest
+
+     steps:
+       - name: print welcome
+         run: echo "welcome"
+
+       - name: print multi-line
+         run: |
+          echo "firstline"
+          echo "secondline"
